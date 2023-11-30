@@ -1,0 +1,145 @@
+body {
+  background: #d1d9e6; /* Ganti warna latar belakang */
+  font-family: 'Arial', sans-serif; /* Ganti jenis font */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-section {
+  background: #ffffff; /* Ganti warna latar utama */
+  max-width: 800px; /* Sesuaikan lebar maksimum */
+  width: 70%; /* Sesuaikan lebar */
+  height: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex; /* Tambahkan display flex untuk menata input dan output */
+}
+
+.add-section {
+  width: 50%; /* Bagian kiri untuk input */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-section input {
+  display: block;
+  width: 100%; /* Lebar input 100% */
+  height: 70px;
+  margin: 10px 0; /* Sesuaikan margin */
+  border: 2px solid #4682b4; /* Ganti warna border */
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0 5px;
+  transition: border-color 0.3s;
+}
+
+.add-section input:focus {
+  border-color: #0088FF;
+}
+
+.add-section button {
+  display: block;
+  width: 100%; /* Lebar tombol 100% */
+  height: 40px;
+  margin: 10px 0; /* Sesuaikan margin */
+  border: none;
+  outline: none;
+  background: #0066cc; /* Ganti warna tombol */
+  color: #fff;
+  font-family: 'Arial', sans-serif; /* Ganti jenis font */
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-section button:hover {
+  background: #004080; /* Ubah warna tombol saat dihover */
+}
+
+.add-section button span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+.show-todo-section {
+  width: 50%; /* Bagian kanan untuk menampilkan output */
+  background: #f0f0f0; /* Ganti warna latar output */
+  margin: 30px 0; /* Sesuaikan margin */
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto; /* Tambahkan overflow-y agar dapat di-scroll jika kontennya lebih panjang */
+}
+
+.todo-item {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 12px 0 #ccc, 0 6px 30px 0 #ccc;
+}
+
+.todo-item h2 {
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 17px;
+  color: #004080; /* Ganti warna teks */
+}
+
+.todo-item small {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+  color: #777; /* Ganti warna teks kecil */
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.remove-to-do {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  font-family: 'Arial', sans-serif; /* Ganti jenis font */
+  color: #cc6666; /* Ganti warna teks */
+  text-decoration: none;
+  text-align: right;
+  padding: 0px 5px 8px 0px;
+  border-radius: 50%;
+  transition: background 1s;
+  cursor: pointer;
+}
+
+.remove-to-do:hover {
+  background: #cc6666;
+  color: #fff;
+}
+
+.checked {
+  color: #999 !important;
+  text-decoration: line-through;
+}
+
+.todo-item input {
+  margin: 0px 5px;
+}
+
+.empty {
+  font-size: 16px;
+  text-align: center;
+  color: #777; /* Ganti warna teks */
+}
